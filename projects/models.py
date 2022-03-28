@@ -8,3 +8,4 @@ class Project(models.Model):
     technology = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     date = models.DateTimeField('date published')
+    picture = models.FileField(upload_to='media/')
